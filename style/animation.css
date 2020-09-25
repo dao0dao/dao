@@ -1,0 +1,80 @@
+.menu--open {
+  top: 100% !important;
+}
+
+.burger--open {
+  -webkit-transform: rotate(90deg) !important;
+          transform: rotate(90deg) !important;
+}
+
+.nav--hide {
+  top: -100% !important;
+}
+
+@-webkit-keyframes scrollAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes scrollAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+.scroll--animation::after {
+  -webkit-animation: scrollAnimation 1.5s linear infinite;
+          animation: scrollAnimation 1.5s linear infinite;
+}
+
+@-webkit-keyframes cursorAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cursorAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.cursor--animation::before {
+  opacity: 0;
+  -webkit-animation: cursorAnimation 1.2s 0.3s ease-in-out infinite;
+          animation: cursorAnimation 1.2s 0.3s ease-in-out infinite;
+}
+/*# sourceMappingURL=animation.css.map */

@@ -1,0 +1,50 @@
+.home .container .text:not(:first-child) {
+  margin-left: 10rem;
+}
+
+@media (min-width: 1921px) {
+  nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 15vw 800px 800px 1fr;
+        grid-template-columns: 15vw 800px 800px 1fr;
+        grid-template-areas: ". dashboard menu .";
+  }
+  nav .dashboard {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: dashboard;
+  }
+  nav .menu {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: menu;
+    text-align: right;
+  }
+  .grid {
+    -ms-grid-columns: 15vw 2px 1630px auto;
+        grid-template-columns: 15vw 2px 1630px auto;
+  }
+  .grid--header {
+        grid-template-areas: ". . . ." ". timeLine container .";
+  }
+  .grid--main {
+        grid-template-areas: ". timeLine . ." ".timeLine container .";
+  }
+  .about .codeLine:hover::after {
+    left: calc(-1rem - 15vw);
+  }
+}
+
+@media (min-width: 1365px) {
+  .portfolio .box {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.portfolio .project {
+  margin: 3rem;
+}
+/*# sourceMappingURL=xlg.css.map */

@@ -1,0 +1,28 @@
+.grid {
+  -ms-grid-columns: 15vw 2px 1fr;
+      grid-template-columns: 15vw 2px 1fr;
+}
+
+.grid--header {
+  -ms-grid-rows: 25vw 1fr;
+      grid-template-rows: 25vw 1fr;
+}
+
+.portfolio .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.portfolio .project .description {
+  max-width: 15rem;
+}
+
+.about .codeLine:hover::after {
+  left: calc(0px - 2px - 15vw - 1rem);
+}
+/*# sourceMappingURL=sm.css.map */

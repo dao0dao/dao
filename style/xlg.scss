@@ -1,0 +1,53 @@
+// min-width: 1200px
+
+.home .container .text:not(:first-child) {
+    margin-left: 10rem;
+}
+
+@media (min-width: 1921px) {
+    nav {
+        display: grid;
+        grid-template-columns: 15vw 800px 800px 1fr;
+        grid-template-areas: ". dashboard menu .";
+        .dashboard {
+            grid-area: dashboard;
+        }
+        .menu {
+            grid-area: menu;
+            text-align: right;
+        }
+    }
+    .grid {
+        grid-template-columns: 15vw 2px 1630px auto;
+    }
+    .grid--header {
+        grid-template-areas:
+            ". . . ."
+            ". timeLine container .";
+    }
+    .grid--main {
+        grid-template-areas:
+            ". timeLine . ."
+            ".timeLine container .";
+    }
+    //about//about
+    .about .codeLine {
+        &:hover {
+            &::after {
+                left: calc(-1rem - 15vw);
+            }
+        }
+    }
+}
+
+// Portfolio
+.portfolio {
+    @media (min-width: 1365px) {
+        .box {
+            justify-content: space-evenly;
+        }
+    }
+    .project {
+        margin: 3rem;
+    }
+}

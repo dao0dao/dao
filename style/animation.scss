@@ -1,0 +1,46 @@
+.menu--open {
+    top: 100% !important;
+}
+.burger--open {
+    transform: rotate(90deg) !important;
+}
+.nav--hide {
+    top: -100% !important;
+}
+@keyframes scrollAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+// header
+.scroll--animation {
+    &::after {
+        animation: scrollAnimation 1.5s linear infinite;
+    }
+}
+//about
+@keyframes cursorAnimation{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.cursor--animation{
+    &::before{
+        opacity: 0;
+        animation: cursorAnimation 1.2s 0.3s ease-in-out infinite
+    }
+}

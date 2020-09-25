@@ -1,0 +1,45 @@
+// min-width: 992px
+@import "./colors";
+
+.grid {
+    grid-template-rows: 4rem 1fr;
+}
+
+.grid--header {
+    grid-template-rows: 25vw 1fr;
+}
+
+// navigation
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    background-color: $navBackground;
+    .burger {
+        display: none;
+    }
+    .dashboard {
+        display: inline-block;
+        background-color: unset;
+    }
+    .menu,
+    .menu ul,
+    .menu li {
+        position: static;
+        display: inline-block;
+        width: auto;
+        box-shadow: none;
+    }
+    .menu li {
+        margin: 0 0.3rem;
+    }
+    .menu {
+        background-color: unset;
+    }
+}
+
+.portfolio, .about, .contact {
+    .circle {
+        top: 5rem;
+    }
+}
