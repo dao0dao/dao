@@ -6,6 +6,8 @@
     scroll-behavior: smooth;
     font-size: 18px;
     font-weight: 400;
+    scrollbar-width: thin;
+    scrollbar-color: $background1 $background2;
 }
 * {
     margin: 0;
@@ -371,7 +373,7 @@ nav {
     .circle {
         top: 3.5rem;
     }
-    .subTitle{
+    .subTitle {
         margin: 2rem 0;
     }
     .contacts {

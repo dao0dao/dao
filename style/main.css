@@ -4,6 +4,8 @@
   scroll-behavior: smooth;
   font-size: 18px;
   font-weight: 400;
+  scrollbar-width: thin;
+  scrollbar-color: #0d151d #1c2e3f;
 }
 
 * {
