@@ -260,10 +260,10 @@ nav .menu .menu_link:hover span {
 
 .home .bckImage .heroImg {
   position: absolute;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .home .bckImage .heroImg:not(:first-child) {

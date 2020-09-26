@@ -1,5 +1,3 @@
-
-
 let nav_block // navigation block
 let nav_menu; // navigation menu
 let nav_btn; // navigation burger
@@ -22,7 +20,7 @@ const main = () => {
         } else {
             stopMobileEvents()
         };
-        changeResolution()
+        // changeResolution()
     })
 };
 
@@ -37,9 +35,7 @@ const getElements = () => {
 };
 
 const runEvents = () => {
-    changeHeaderImg(8, 0.8);
     animateProjects();
-    changeResolution()
 };
 
 const runMobileEvents = () => {
@@ -84,39 +80,6 @@ const closeNavMenu = () => {
     nav_menu.classList.remove('menu--open');
     nav_btn.classList.remove('burger--open');
 
-}
-// Handle header image
-
-const changeHeaderImg = (timeChanege, timeDuration) => {
-    let i = 1
-    setInterval(() => {
-        hideImage(timeDuration);
-        headerImgs[i].style.opacity = 1;
-        i++;
-        if (i === headerImgs.length) {
-            i = 0
-        }
-    }, timeChanege * 1000);
-};
-
-const hideImage = (timeDuration) => {
-    headerImgs.forEach(element => {
-        element.style.opacity = 0
-        element.style.transition = `opacity ${timeDuration}s ease-in`
-    });
-}
-
-const changeResolution = () => {
-    if (window.innerWidth >= 1200) {
-
-        headerImgs.forEach(function (element, index) {
-            element.src = `./img/${index + 1}hd.png`
-        })
-    } else {
-        headerImgs.forEach(function (element, index) {
-            element.src = `./img/${index + 1}.png`
-        })
-    }
 }
 
 // Portfolio animation

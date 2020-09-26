@@ -194,9 +194,10 @@ nav {
         background-color: #000000;
         .heroImg {
             position: absolute;
+            top:50%;
             left: 50%;
-            transform: translateX(-50%);
-            height: 100%;
+            transform: translate(-50%, -50%);
+
         }
         .heroImg:not(:first-child) {
             opacity: 0;
