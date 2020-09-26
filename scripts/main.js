@@ -87,7 +87,7 @@ const closeNavMenu = () => {
 
 const changeHeaderImg = (timeChanege, timeDuration) => {
     let i = 1
-    interval = setInterval(() => {
+    setInterval(() => {
         hideImage(timeDuration);
         headerImgs[i].style.opacity = 1;
         i++;
