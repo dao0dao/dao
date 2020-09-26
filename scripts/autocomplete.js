@@ -1,3 +1,4 @@
+'use strict'
 //About
 let codeLine = [...document.querySelectorAll('.codeLine')];
 const elIndex = (el) => {

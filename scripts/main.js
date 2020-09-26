@@ -1,4 +1,4 @@
-'user strict'
+'use strict'
 
 let nav_block // navigation block
 let nav_menu; // navigation menu
