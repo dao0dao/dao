@@ -21,7 +21,8 @@ const main = () => {
             runMobileEvents();
         } else {
             stopMobileEvents()
-        }
+        };
+        changeResolution()
     })
 };
 
@@ -38,6 +39,7 @@ const getElements = () => {
 const runEvents = () => {
     changeHeaderImg(8, 0.8);
     animateProjects();
+    changeResolution()
 };
 
 const runMobileEvents = () => {
@@ -102,6 +104,19 @@ const hideImage = (timeDuration) => {
         element.style.opacity = 0
         element.style.transition = `opacity ${timeDuration}s ease-in`
     });
+}
+
+const changeResolution = () => {
+    if (window.innerWidth >= 1200) {
+
+        headerImgs.forEach(function (element, index) {
+            element.src = `./img/${index + 1}hd.png`
+        })
+    } else {
+        headerImgs.forEach(function (element, index) {
+            element.src = `./img/${index + 1}.png`
+        })
+    }
 }
 
 // Portfolio animation
