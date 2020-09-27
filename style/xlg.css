@@ -31,6 +31,9 @@
   .grid--main {
         grid-template-areas: ". timeLine . ." ".timeLine container .";
   }
+  .home .container {
+    border-top-right-radius: 25px;
+  }
   .home .bckImage .heroImg {
     position: absolute;
     left: calc(15vw + 817px);

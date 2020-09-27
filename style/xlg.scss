@@ -30,9 +30,14 @@
             ". timeLine . ."
             ".timeLine container .";
     }
-    .home .bckImage .heroImg {
-        position: absolute;
-        left: calc(15vw + 817px);
+    .home {
+        .container {
+            border-top-right-radius: 25px;
+        }
+        .bckImage .heroImg {
+            position: absolute;
+            left: calc(15vw + 817px);
+        }
     }
     //about//about
     .about .codeLine {
