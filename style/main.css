@@ -21,6 +21,7 @@ body {
 }
 
 .link {
+  color: #8de6db;
   text-decoration: none;
 }
 
@@ -42,8 +43,8 @@ body {
 
 .grid--main {
       grid-template-areas: ". timeLine ." ".timeLine container";
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#1c2e3f), color-stop(80%, #0d151d));
-  background-image: linear-gradient(0deg, #1c2e3f 0%, #0d151d 80%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0d151d), color-stop(10%, #1c2e3f), color-stop(80%, #0d151d));
+  background-image: linear-gradient(0deg, #0d151d 0%, #1c2e3f 10%, #0d151d 80%);
 }
 
 aside {
@@ -93,6 +94,7 @@ aside .scroll::after {
 }
 
 .container {
+  position: relative;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: container;
@@ -242,7 +244,6 @@ nav .menu .menu_link:hover span {
 
 .home {
   position: relative;
-  background-color: #0d151d;
 }
 
 .home .circle {
@@ -255,7 +256,8 @@ nav .menu .menu_link:hover span {
   width: 100%;
   height: 100%;
   z-index: 0;
-  background-color: #000000;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0d151d), color-stop(5%, #000000));
+  background-image: linear-gradient(0deg, #0d151d 0%, #000000 5%);
 }
 
 .home .bckImage .heroImg {
@@ -271,7 +273,9 @@ nav .menu .menu_link:hover span {
 }
 
 .home .container {
-  background-color: #0f1a24ec;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0f1a24ec), color-stop(98%, #0d151d));
+  background-image: linear-gradient(180deg, #0f1a24ec 0%, #0d151d 98%);
+  border-top-right-radius: 25px;
 }
 
 .home h1 span {
@@ -506,7 +510,6 @@ nav .menu .menu_link:hover span {
 }
 
 .contact .link {
-  color: #8de6db;
   margin-right: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
