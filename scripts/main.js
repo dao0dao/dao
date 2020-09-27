@@ -20,7 +20,6 @@ const main = () => {
         } else {
             stopMobileEvents()
         };
-        // changeResolution()
     })
 };
 

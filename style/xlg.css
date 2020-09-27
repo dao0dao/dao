@@ -31,6 +31,14 @@
   .grid--main {
         grid-template-areas: ". timeLine . ." ".timeLine container .";
   }
+  .home .container {
+    -webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+  }
+  .home .bckImage .heroImg {
+    position: absolute;
+    left: calc(15vw + 817px);
+  }
   .about .codeLine:hover::after {
     left: calc(-1rem - 15vw);
   }
