@@ -1,11 +1,11 @@
 'use strict'
 //About
 let codeLine = [...document.querySelectorAll('.codeLine')];
-const elIndex = (el) => {
-    if (codeLine.indexOf(el) < 9) {
-        return `0${codeLine.indexOf(el) + 1}`
+const elIndex = (index) => {
+    if (index < 9) {
+        return `0${index + 1}`
     } else {
-        return codeLine.indexOf(el) + 1
+        return index + 1
     }
 };
 const removePadding = () => {
@@ -14,8 +14,8 @@ const removePadding = () => {
 const addPadding = () => {
     codeLine.map(el => el.style.paddingLeft = el.dataset.pl)
 }
-codeLine.map(el => {
-    el.dataset.lineNr = elIndex(el);
+codeLine.map((el, i) => {
+    el.dataset.lineNr = elIndex(i);
     el.style.paddingLeft = el.dataset.pl;
 });
 window.addEventListener('resize', () => {
