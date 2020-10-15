@@ -1,3 +1,5 @@
+'use strict'
+
 let nav_block // navigation block
 let nav_menu; // navigation menu
 let nav_btn; // navigation burger
