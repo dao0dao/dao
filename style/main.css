@@ -353,6 +353,10 @@ nav .menu .menu_link:hover span {
   background-color: #8de6db;
 }
 
+.portfolio .project .pr_title {
+  font-size: 1.2rem;
+}
+
 .portfolio .project .pr_info {
   color: #84a7be;
 }
