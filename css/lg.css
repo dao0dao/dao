@@ -1,0 +1,52 @@
+.grid {
+  -ms-grid-rows: 4rem 1fr;
+      grid-template-rows: 4rem 1fr;
+}
+
+.grid--header {
+  -ms-grid-rows: 25vw 1fr;
+      grid-template-rows: 25vw 1fr;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0.5rem;
+  background-color: #222222;
+}
+
+nav .burger {
+  display: none;
+}
+
+nav .dashboard {
+  display: inline-block;
+  background-color: unset;
+}
+
+nav .menu,
+nav .menu ul,
+nav .menu li {
+  position: static;
+  display: inline-block;
+  width: auto;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+nav .menu li {
+  margin: 0 0.3rem;
+}
+
+nav .menu {
+  background-color: unset;
+}
+
+.portfolio .circle, .about .circle, .contact .circle {
+  top: 5rem;
+}
+/*# sourceMappingURL=lg.css.map */
